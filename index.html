@@ -1,0 +1,14 @@
+<script type="text/javascript" src="jsfile.js"></script>
+<h1>
+  JSFile Demo
+</h1>
+<textarea id="demo-text"></textarea>
+<button onclick="submit()">Get your file as a blob</button>
+<script>
+  function submit(){
+  var maker=new JSfile();
+    maker.setContent(document.querySelector('textarea').value);
+    maker.setMimeType('text/plain');
+    location.href=maker.getFile();
+  }
+</script>
