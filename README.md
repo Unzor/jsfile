@@ -1,6 +1,10 @@
 # jsfile
 JavaScript file packager
 # Usage
+To install, add this to your site:
+```html
+<script type="text/javascript" src="path/to/jsfile.js"></script>
+```
 To make a  JSfile instance, use this script:
 
 ```javascript
