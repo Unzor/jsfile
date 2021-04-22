@@ -1,0 +1,1 @@
+var MimeType,Content,files={};class JSfile{constructor(){return files}}files.setContent=function(e){Content=e},files.setMimeType=function(e){MimeType=e},files.getFile=function(){var e=new Blob([Content],{type:MimeType});return URL.createObjectURL(e)};
